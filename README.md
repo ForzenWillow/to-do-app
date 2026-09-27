@@ -2,6 +2,17 @@
 
 A small single-page To-Do application built with HTML, CSS, and browser-native JavaScript.
 
+## Lesson Objective
+
+This project is a hands-on lesson experiment: use the GitHub Copilot coding agent to turn a
+specification into a working, deliberately small web app. The goal is to observe how quickly the
+agent can move from requirements through planning and implementation, and to evaluate how
+proficiently it delivers the requested behavior, handles edge cases, and preserves usability.
+
+Learners can assess the result against the feature specifications, acceptance scenarios, browser
+checks, and code review. The agent's output is a starting point for learning, not a substitute for
+understanding or reviewing the submitted work.
+
 ## Run
 
 Open `index.html` in a current web browser. No package installation, backend, database, or build
@@ -26,6 +37,16 @@ toggle completion or **X** to delete that task.
 Use the **Appearance** options to switch between the default styling and Galaxy. Galaxy uses
 blended purple gradients and shifting task borders. Reduced-motion preferences stop the border
 animation while keeping its gradient. The default theme is selected again after reload.
+
+## Screenshots
+
+**Default theme**
+
+![To-do app using the default theme](screenshots/default-theme.png)
+
+**Galaxy theme**
+
+![To-do app using the Galaxy theme](screenshots/galaxy-theme.png)
 
 ## Feature Documentation
 
