@@ -1,50 +1,61 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report
+Version change: Unadopted scaffold -> 1.0.0
+Modified principles:
+- Principle slot 1 -> I. Specification-First Development
+- Principle slot 2 -> II. Responsible AI Use
+- Principle slot 3 -> III. Incremental, Verifiable Delivery
+- Principle slot 4 -> IV. Meaningful Version Control
+- Principle slot 5 -> V. Documented Decisions and Simplicity
+Added sections: Technology and Quality Constraints; Development Workflow
+Removed sections: None
+Follow-up TODOs: Confirm the original ratification date with the project owner.
+-->
+# Course Web Application Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Specification-First Development
+Every feature MUST begin with a written specification that states its purpose, user-visible
+behavior, and acceptance criteria. Implementation MUST wait until those criteria are clear.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Responsible AI Use
+AI tools MAY be used throughout the project. Students MUST understand, verify, and be able to
+explain all submitted work, including AI-generated work; unverified or misunderstood output MUST
+be corrected or excluded.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Incremental, Verifiable Delivery
+Features MUST be implemented in small, runnable increments. Each increment MUST be checked against
+its relevant acceptance criteria before work proceeds to the next one.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Meaningful Version Control
+Each Git commit MUST capture one coherent change and use a concise, descriptive message. Commits
+MUST NOT include secrets or unrelated changes.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Documented Decisions and Simplicity
+Important technical or product decisions MUST record their context, chosen option, and consequences
+in the project documentation. Implementations MUST prefer the simplest approach that satisfies the
+approved specification.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Technology and Quality Constraints
+The application MUST use HTML, CSS, and JavaScript. It MUST use semantic HTML and support usable
+layouts on common screen sizes. Additional frameworks or dependencies require justification in the
+feature specification and approval before adoption.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Development Workflow
+For each feature, write and review its specification, implement it in small increments, check the
+affected behavior in a browser and against its acceptance criteria, then commit the completed
+changes. Update relevant documentation when behavior or an important decision changes.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution governs project engineering practice; feature specifications define feature
+behavior. Conflicts MUST be resolved by updating the relevant specification or constitution before
+implementation continues. The student author MUST review each feature and submission for
+compliance, and record any approved exception with its rationale.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Amendments MUST state their rationale and be reviewed by the project owner before adoption.
+Versioning follows semantic rules: MAJOR for removed or redefined principles, MINOR for new or
+materially expanded requirements, and PATCH for clarifications that do not change requirements.
+The project owner MUST review compliance at feature completion and before final submission.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE): confirm with project owner | **Last Amended**: 2026-09-26

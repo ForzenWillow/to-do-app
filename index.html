@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eef4f1">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main id="task-app" class="page-shell">
+      <header class="page-header">
+        <p class="eyebrow">A little order, one task at a time</p>
+        <h1>To-do list</h1>
+      </header>
+      <fieldset class="theme-switcher" aria-label="Appearance">
+        <legend>Appearance</legend>
+        <label class="theme-option" for="theme-default">
+          <input id="theme-default" name="theme" type="radio" value="default" checked>
+          <span>Default</span>
+        </label>
+        <label class="theme-option" for="theme-galaxy">
+          <input id="theme-galaxy" name="theme" type="radio" value="galaxy">
+          <span>Galaxy</span>
+        </label>
+      </fieldset>
+      <section class="task-panel" aria-labelledby="task-panel-title">
+        <h2 id="task-panel-title">Your tasks</h2>
+        <div id="task-content">
+          <form id="task-form">
+            <label for="task-description">Task description</label>
+            <div class="task-entry">
+              <input
+                id="task-description"
+                name="description"
+                type="text"
+                autocomplete="off"
+                aria-describedby="task-feedback"
+              >
+              <button id="add-task" type="submit">Add</button>
+            </div>
+            <p id="task-feedback" class="task-feedback" role="status" aria-live="polite"></p>
+          </form>
+          <ul id="task-list" aria-label="Tasks"></ul>
+        </div>
+      </section>
+      <footer class="page-footer">Tasks stay in this page until it is closed or refreshed.</footer>
+    </main>
+  </body>
+</html>
